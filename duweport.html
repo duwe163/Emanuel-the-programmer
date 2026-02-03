@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emmanuel Duwe - Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-image: linear-gradient(to right,cyan, lightblue,darkblue);
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px;
+    }
+
+    .container {
+      display: flex;
+      max-width: 1100px;
+      width: 100%;
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0px 10px 30px rgba(0,0,0,0.2);
+      overflow: hidden;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .left {
+      width: 35%;
+      background: #2a5298;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    .left img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 5px solid #fff;
+      margin-bottom: 20px;
+    }
+
+    .left h2 {
+      margin: 10px 0 5px;
+      font-size: 24px;
+    }
+
+    .left p {
+      font-size: 16px;
+      opacity: 0.9;
+    }
+
+    .contact {
+      margin-top: 20px;
+      font-size: 14px;
+    }
+
+    .right {
+      width: 65%;
+      padding: 40px;
+    }
+
+    .section {
+      margin-bottom: 30px;
+    }
+
+    .section h3 {
+      border-left: 5px solid #2a5298;
+      padding-left: 10px;
+      margin-bottom: 15px;
+      color: #2a5298;
+    }
+
+    .skill {
+      margin-bottom: 15px;
+    }
+
+    .skill p {
+      margin: 0 0 5px;
+      font-weight: bold;
+    }
+
+    .bar {
+      height: 18px;
+      background: #ddd;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+
+    .bar span {
+      display: block;
+      height: 100%;
+      background: linear-gradient(90deg, #1e3c72, #2a5298);
+      border-radius: 5px;
+      width: 0;
+      animation: loadSkill 2s forwards;
+      color: white;
+      text-align: center;
+    }
+
+    @keyframes loadSkill {
+      from { width: 0; }
+      to { width: var(--level); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .social-section {
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .social-section h3 {
+      color: white;
+      margin-bottom: 15px;
+    }
+
+    .social-icons img {
+      width: 40px;
+      margin: 0 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .social-icons img:hover {
+      transform: scale(1.2);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left">
+      <img src="duwe7.jpg" alt="Profile Picture">
+      <h2>Emmanuel Duwe</h2>
+      <p>→ Software Developer</p>
+      <div class="contact">
+        <p><strong>Location:</strong> Arusha, Tanzania</p>
+        <p><strong>Email:</strong> emanuelidoue@gmail.com</p>
+        <p><strong>Phone:</strong> +255 756 513 833</p>
+      </div>
+    </div>
+
+    <div class="right">
+      <div class="section">
+        <h3>Work Experience</h3>
+        <p><strong>Website Developer</strong> - Freelance</p>
+        <p>Building full-stack web applications, responsive websites, and managing projects for clients worldwide</p><br>
+        <p><strong>System Designer</strong> - Freelance</p>
+        <p>Designed and developed modern systems integrating web, cloud, and networking solutions.</p><br>
+        <p><strong>Network Administrator</strong> - Various Projects</p>
+        <p>Managed and maintained secure and scalable networks for organizations.</p><br>
+        <p><strong>Graphics & Design</strong> - Adobe Projects</p>
+        <p>Worked on multiple graphic design projects using Photoshop, Illustrator, and more.</p>
+      </div>
+
+      <div class="section">
+        <h3>Education</h3>
+        <p><strong>University of Dar es Salaam</strong> - Bachelor’s Degree</p>
+        <p><strong>School of Coding (USA)</strong> - Full Stack (Software Development)</p>
+        <p><strong>Mzumbe Secondary School</strong> - Advanced Education</p>
+      </div>
+
+      <div class="section">
+        <h3>Skills</h3>
+        <div class="skill">
+          <p>Web Development</p>
+          <div class="bar"><span style="--level:95%">95%</span></div>
+        </div>
+        <div class="skill">
+          <p>System Design</p>
+          <div class="bar"><span style="--level:80%">80%</span></div>
+        </div>
+        <div class="skill">
+          <p>Network Administration</p>
+          <div class="bar"><span style="--level:79%">79%</span></div>
+        </div>
+        <div class="skill">
+          <p>Graphics & Design</p>
+          <div class="bar"><span style="--level:85%">85%</span></div>
+        </div>
+        <div class="skill">
+          <p>Mobile App Development</p>
+          <div class="bar"><span style="--level:50%">50%</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SOCIAL MEDIA SECTION -->
+  <div class="social-section">
+    <h3 style="color: red;">Connect with me</h3>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/duwe.de_son" target="_blank">
+        <img src="instagram.png" alt="Instagram">
+      </a>
+      <a href="https://www.facebook.com/Emanuel Doue" target="_blank">
+        <img src="fb.png" alt="Facebook">
+      </a>
+      <a href="https://twitter.com/yourusername" target="_blank">
+        <img src="xlogo.png" alt="X">
+      </a>
+      <a href="https://www.youtube.com/@yourusername" target="_blank">
+        <img src="youtube.png" alt="YouTube">
+      </a>
+      <a href="https://www.linkedin.com/in/emanuelidoue" target="_blank">
+        <img src="linkedin.png" alt="LinkedIn">
+      </a>
+    </div>
+  </div>
+</body>
+</html>
